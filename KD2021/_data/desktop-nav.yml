@@ -1,0 +1,39 @@
+toc:
+
+
+
+  - title: Portfolio
+    url: /projects/
+
+  - title: Services
+    subfolderitems:
+
+      - page: Graphic Design
+        url: /graphic-design/
+
+      - page: Web Design
+        url: /web-design/
+
+      - page: Logo Design
+        url: /logo-design/
+
+      - page: Brand Identity
+        url: /brand-identity/
+
+      - page: Social Media
+        url: /social-media/
+
+      - page: View All Services
+        url: /services/
+
+  - title: More Info
+    subfolderitems:
+
+      - page: About Me
+        url: /about/
+
+      - page: Blog
+        url: /blog/
+
+  - title: Contact
+    url: /contact/

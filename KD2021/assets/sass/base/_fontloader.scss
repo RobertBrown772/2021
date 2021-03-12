@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;400&display=swap');
+
+$main-font: Poppins;
+$secondary-font: IBM Plex Sans;
+
+*{
+  font-family: $main-font;
+}
+
+p, a, span, ul, li, title, blockquote, code, form, input, table,{
+  font-family: $secondary-font;
+  line-height: 1.8;
+}
+
+$min_width: 320px;
+$max_width: 1400px;
+$min_font: 14px;
+$max_font: 16px;
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+h1{
+    @include fluid-type($min_width, $max_width, 36px, 48px);
+}
+h2{
+    @include fluid-type($min_width, $max_width, 30px, 36px);
+}
+h3{
+    @include fluid-type($min_width, $max_width, 26px, 30px);
+}
+h4{
+    @include fluid-type($min_width, $max_width, 22px, 26px);
+}
+h5{
+    @include fluid-type($min_width, $max_width, 19px, 22px);
+}

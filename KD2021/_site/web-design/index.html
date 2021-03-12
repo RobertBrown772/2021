@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>
+  
+  Web Design
+  
+</title>
+
+  
+<link rel="shortcut icon" href="http://localhost:4000 /favicon.ico" />
+
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/main.css" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="/assets/js/app.js"></script>
+<link rel="canonical" href="http://localhost:4000/web-design/">
+</head>
+
+
+<body>
+  <!---------------------------------------------------------------
+--------------------- Main Navigation ---------------------------
+---------------------------------------------------------------->
+
+<div class="navigation navigation__secondary navigation__fixed">
+  <div class="navigation--inner container">
+
+    <!-- Navigation Logo -->
+    <a href="/" class="navigation--logo">
+      <img src="/assets/images/KodaNoTag.svg" alt="KODAGRAPHIK">
+    </a>
+
+    <!-- Navigation Hamburger -->
+    <div class="navigation--items d-flex d-md-none">
+      <div class="navigation--item navigation--hamburger">
+        <a>
+          <i class="js-hamburger fas fa-bars"></i>
+        </a>
+        <a>
+          <i class="js-arrow fas fa-arrow-right d-none"></i>
+        </a>
+      </div>
+    </div>
+    <div class="navigation--items d-none d-md-flex">
+
+      <!---------------------------------------------------------------
+      --------------------- Iterate Count For Dropdowns ---------------
+      ---------------------------------------------------------------->
+      
+      
+      <div class="navigation--item" data-toggle="collapse" data-target="#dropdown-0" aria-expanded="false"
+        aria-controls="dropdown-0">
+
+        <!-- Nav Level One -->
+        
+        <a href="/projects/">Portfolio</a>
+        
+
+
+        <!-- Nav Level Two -->
+        
+
+
+        
+      </div>
+      
+      <div class="navigation--item" data-toggle="collapse" data-target="#dropdown-1" aria-expanded="false"
+        aria-controls="dropdown-1">
+
+        <!-- Nav Level One -->
+        
+        <a href="#dropdown-1">Services</a>
+        
+
+
+        <!-- Nav Level Two -->
+        
+        <i class="fas fa-chevron-down"></i>
+        <div class="dropdown-items collapse" id="dropdown-1">
+          
+          <div class="navigation--item dropdown deeper">
+            <a href="/graphic-design/">Graphic Design</a>
+          </div>
+          
+          <div class="navigation--item dropdown deeper">
+            <a href="/web-design/">Web Design</a>
+          </div>
+          
+          <div class="navigation--item dropdown deeper">
+            <a href="/logo-design/">Logo Design</a>
+          </div>
+          
+          <div class="navigation--item dropdown deeper">
+            <a href="/brand-identity/">Brand Identity</a>
+          </div>
+          
+          <div class="navigation--item dropdown deeper">
+            <a href="/social-media/">Social Media</a>
+          </div>
+          
+          <div class="navigation--item dropdown deeper">
+            <a href="/services/">View All Services</a>
+          </div>
+          
+        </div>
+        
+
+
+        
+      </div>
+      
+      <div class="navigation--item" data-toggle="collapse" data-target="#dropdown-2" aria-expanded="false"
+        aria-controls="dropdown-2">
+
+        <!-- Nav Level One -->
+        
+        <a href="#dropdown-2">More Info</a>
+        
+
+
+        <!-- Nav Level Two -->
+        
+        <i class="fas fa-chevron-down"></i>
+        <div class="dropdown-items collapse" id="dropdown-2">
+          
+          <div class="navigation--item dropdown deeper">
+            <a href="/about/">About Me</a>
+          </div>
+          
+          <div class="navigation--item dropdown deeper">
+            <a href="/blog/">Blog</a>
+          </div>
+          
+        </div>
+        
+
+
+        
+      </div>
+      
+      <div class="navigation--item" data-toggle="collapse" data-target="#dropdown-3" aria-expanded="false"
+        aria-controls="dropdown-3">
+
+        <!-- Nav Level One -->
+        
+        <a href="/contact/">Contact</a>
+        
+
+
+        <!-- Nav Level Two -->
+        
+
+
+        
+      </div>
+      
+    </div>
+  </div>
+  <!---------------------------------------------------------------
+  --------------------- Navigation Breadcrumbs--[------------------
+  ---------------------------------------------------------------->
+</div>
+<div class="navigation-mobile js-hide d-md-none">
+  <div class="js-backdrop"></div>
+  <div class="navigation--items ">
+
+    <!---------------------------------------------------------------
+    --------------------- Iterate Count Fxor Dropdowns ---------------
+    ---------------------------------------------------------------->
+    
+    
+    <div class="navigation--item" data-toggle="collapse" data-target="#dropdown-100" aria-expanded="false"
+      aria-controls="dropdown-100">
+
+      <!-- Nav Level One -->
+      
+      <a href="/projects/">Portfolio</a>
+      
+
+        
+
+
+      
+    </div>
+    
+    <div class="navigation--item" data-toggle="collapse" data-target="#dropdown-101" aria-expanded="false"
+      aria-controls="dropdown-101">
+
+      <!-- Nav Level One -->
+      
+      <a href="#dropdown-101">Services
+        
+
+        
+        <i class="fas fa-chevron-down"></i>
+      </a>
+
+      <!-- Nav Level Two -->
+
+      <div class="dropdown-items collapse" id="dropdown-101">
+        
+        <div class="navigation--item dropdown deeper">
+          <a href="/graphic-design/">Graphic Design</a>
+        </div>
+        
+        <div class="navigation--item dropdown deeper">
+          <a href="/web-design/">Web Design</a>
+        </div>
+        
+        <div class="navigation--item dropdown deeper">
+          <a href="/logo-design/">Logo Design</a>
+        </div>
+        
+        <div class="navigation--item dropdown deeper">
+          <a href="/brand-identity/">Brand Identity</a>
+        </div>
+        
+        <div class="navigation--item dropdown deeper">
+          <a href="/social-media/">Social Media</a>
+        </div>
+        
+        <div class="navigation--item dropdown deeper">
+          <a href="/services/">View All Services</a>
+        </div>
+        
+      </div>
+      
+
+
+      
+    </div>
+    
+    <div class="navigation--item" data-toggle="collapse" data-target="#dropdown-102" aria-expanded="false"
+      aria-controls="dropdown-102">
+
+      <!-- Nav Level One -->
+      
+      <a href="#dropdown-102">More Info
+        
+
+        
+        <i class="fas fa-chevron-down"></i>
+      </a>
+
+      <!-- Nav Level Two -->
+
+      <div class="dropdown-items collapse" id="dropdown-102">
+        
+        <div class="navigation--item dropdown deeper">
+          <a href="/about/">About Me</a>
+        </div>
+        
+        <div class="navigation--item dropdown deeper">
+          <a href="/blog/">Blog</a>
+        </div>
+        
+      </div>
+      
+
+
+      
+    </div>
+    
+    <div class="navigation--item" data-toggle="collapse" data-target="#dropdown-103" aria-expanded="false"
+      aria-controls="dropdown-103">
+
+      <!-- Nav Level One -->
+      
+      <a href="/contact/">Contact</a>
+      
+
+        
+
+
+      
+    </div>
+    
+  </div>
+</div>
+
+<div class="container-fluid breadcrumbs">
+  <div class="container">
+    <a href="/">Home</a> <span> > Web Design </span>
+  </div>
+</div>
+
+
+  
+  <main class="container main crumbs" aria-label="Content">
+    <div data-aos="fade-up"><h1>Web Design</h1></div>
+
+    </div>
+  </main>
+  <div class="footer footer__secondary">
+  <div class="container">
+    <div class="row footer--inner">
+
+      <a href="/" class="footer--logo col-md-3">
+        <img src="/assets/images/KodaNoTag.svg" alt="KODAGRAPHIK">
+      </a>
+
+      <div class="col-md-6 footer--items">
+          
+          <div class="footer--item">
+            <a href="/projects/">Portfolio</a>
+          </div>
+          
+          <div class="footer--item">
+            <a href="/services/">Services</a>
+          </div>
+          
+          <div class="footer--item">
+            <a href="/graphic-design/">Graphic Design</a>
+          </div>
+          
+          <div class="footer--item">
+            <a href="/web-design/">Web Design</a>
+          </div>
+          
+          <div class="footer--item">
+            <a href="/logo-design/">Logo Design</a>
+          </div>
+          
+          <div class="footer--item">
+            <a href="/brand-identity/">Brand Identity</a>
+          </div>
+          
+          <div class="footer--item">
+            <a href="/social-media/">Social Media</a>
+          </div>
+          
+          <div class="footer--item">
+            <a href="/services/">View All Services</a>
+          </div>
+          
+          <div class="footer--item">
+            <a href="/about/">About Me</a>
+          </div>
+          
+          <div class="footer--item">
+            <a href="/blog/">Blog</a>
+          </div>
+          
+          <div class="footer--item">
+            <a href="/contact/">Contact</a>
+          </div>
+          
+        </div>
+        <div class="col-md-3">
+          <div class="footer--socials">
+            <a class="" href="">
+              <i class="fab fa-whatsapp-square"></i>
+            </a>
+            <a class="" href="">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+            <a class="" href="">
+              <i class="fab fa-behance-square"></i>
+            </a>
+            <a class="" href="">
+              <i class="fas fa-phone-square-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</body>
+<script>
+  AOS.init();
+</script>
+
+</html>

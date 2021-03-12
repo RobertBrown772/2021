@@ -1,0 +1,106 @@
+<!---------------------------------------------------------------
+--------------------- Main Navigation ---------------------------
+---------------------------------------------------------------->
+
+<div class="navigation navigation__secondary navigation__fixed">
+  <div class="navigation--inner container">
+
+    <!-- Navigation Logo -->
+    <a href="/" class="navigation--logo">
+      <img src="{{site.logo}}" alt="{{site.title}}">
+    </a>
+
+    <!-- Navigation Hamburger -->
+    <div class="navigation--items d-flex d-md-none">
+      <div class="navigation--item navigation--hamburger">
+        <a>
+          <i class="js-hamburger fas fa-bars"></i>
+        </a>
+        <a>
+          <i class="js-arrow fas fa-arrow-right d-none"></i>
+        </a>
+      </div>
+    </div>
+    <div class="navigation--items d-none d-md-flex">
+
+      <!---------------------------------------------------------------
+      --------------------- Iterate Count For Dropdowns ---------------
+      ---------------------------------------------------------------->
+      {% assign count = 0 %}
+      {% for item in site.data.desktop-nav.toc %}
+      <div class="navigation--item" data-toggle="collapse" data-target="#dropdown-{{count}}" aria-expanded="false"
+        aria-controls="dropdown-{{count}}">
+
+        <!-- Nav Level One -->
+        {% if item.url %}
+        <a href="{{item.url}}">{{ item.title }}</a>
+        {% else %}
+        <a href="#dropdown-{{count}}">{{ item.title }}</a>
+        {% endif %}
+
+
+        <!-- Nav Level Two -->
+        {% if item.subfolderitems %}
+        <i class="fas fa-chevron-down"></i>
+        <div class="dropdown-items collapse" id="dropdown-{{count}}">
+          {% for entry in item.subfolderitems %}
+          <div class="navigation--item dropdown deeper">
+            <a href="{{ entry.url }}">{{ entry.page }}</a>
+          </div>
+          {% endfor %}
+        </div>
+        {% endif %}
+
+
+        {% assign count = count | plus: 1 %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <!---------------------------------------------------------------
+  --------------------- Navigation Breadcrumbs--[------------------
+  ---------------------------------------------------------------->
+</div>
+<div class="navigation-mobile js-hide d-md-none">
+  <div class="js-backdrop"></div>
+  <div class="navigation--items ">
+
+    <!---------------------------------------------------------------
+    --------------------- Iterate Count Fxor Dropdowns ---------------
+    ---------------------------------------------------------------->
+    {% assign count = 100 %}
+    {% for item in site.data.desktop-nav.toc %}
+    <div class="navigation--item" data-toggle="collapse" data-target="#dropdown-{{count}}" aria-expanded="false"
+      aria-controls="dropdown-{{count}}">
+
+      <!-- Nav Level One -->
+      {% if item.url %}
+      <a href="{{item.url}}">{{ item.title }}</a>
+      {% else %}
+      <a href="#dropdown-{{count}}">{{ item.title }}
+        {% endif %}
+
+        {% if item.subfolderitems %}
+        <i class="fas fa-chevron-down"></i>
+      </a>
+
+      <!-- Nav Level Two -->
+
+      <div class="dropdown-items collapse" id="dropdown-{{count}}">
+        {% for entry in item.subfolderitems %}
+        <div class="navigation--item dropdown deeper">
+          <a href="{{ entry.url }}">{{ entry.page }}</a>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+
+      {% assign count = count | plus: 1 %}
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% if page.breadcrumbs == true %}
+{% include components/breadcrumbs.html %}
+{% endif %}

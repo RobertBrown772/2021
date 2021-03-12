@@ -1,0 +1,34 @@
+<div class="footer footer__secondary">
+  <div class="container">
+    <div class="row footer--inner">
+
+      <a href="/" class="footer--logo col-md-3">
+        <img src="{{site.logo}}" alt="{{site.title}}">
+      </a>
+
+      <div class="col-md-6 footer--items">
+          {% for item in site.data.footer-nav %}
+          <div class="footer--item">
+            <a href="{{item.url}}">{{ item.title }}</a>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="col-md-3">
+          <div class="footer--socials">
+            <a class="" href="">
+              <i class="fab fa-whatsapp-square"></i>
+            </a>
+            <a class="" href="">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+            <a class="" href="">
+              <i class="fab fa-behance-square"></i>
+            </a>
+            <a class="" href="">
+              <i class="fas fa-phone-square-alt"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

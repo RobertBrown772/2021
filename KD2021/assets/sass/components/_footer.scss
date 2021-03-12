@@ -1,0 +1,37 @@
+.footer {
+
+
+  &--inner {
+    padding: $pad-xs;
+    color: $base-white;
+    padding: 80px 0px;
+  }
+
+   &--logo { 
+    img{
+      height: 55px;
+    }
+  }
+  
+  &--items { 
+  }
+  &--item {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 13px;
+      a {
+        text-transform: uppercase;
+        color: $base-white; 
+        text-decoration: none;
+      }
+    }
+
+  &--socials a{
+    font-size: 30px;
+    color: white;
+  }
+  &__primary{ background-color: $brand-primary; color: $base-white}
+  &__secondary{ background-color: $brand-secondary; color: $base-white}
+}
+
+

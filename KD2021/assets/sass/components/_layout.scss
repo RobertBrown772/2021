@@ -1,0 +1,15 @@
+.main{
+  min-height: 80vh;
+}
+
+.koda-container{
+  padding-right: 30px;
+  padding-left: 30px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}

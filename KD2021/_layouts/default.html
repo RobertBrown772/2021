@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: page.lang | default: 'en' }}">
+
+{% include components/head.html %}
+
+<body>
+  {% include components/navigation.html %}
+
+  {% if page.breadcrumbs == true %}
+  {% assign pageClass = 'crumbs' %}
+  {% else %}
+  {% assign pageClass = 'no-crumbs' %}
+  {% endif %}
+  <main class="container main {{pageClass}}" aria-label="Content">
+    <div data-aos="fade-up">{{ content }}</div>
+
+    </div>
+  </main>
+  {% include components/footer.html %}
+</body>
+<script>
+  AOS.init();
+</script>
+
+</html>

@@ -1,0 +1,150 @@
+.navigation {
+  z-index: 1000;
+
+  &--inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: $base-white;
+  }
+
+   &--logo { 
+    img{
+      height: 55px;
+      margin: 10px 0px;
+    }
+  }
+  
+  &--items { 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  &--item {
+    position: relative;
+    cursor: pointer;
+
+      a {
+        text-transform: uppercase;
+        color: $base-white;
+        text-decoration: none;
+      }
+    }
+  &--hamburger{
+    font-size: 24px;
+  }
+
+
+  .dropdown-items{
+    position: absolute;
+    background: $base-white;
+    top: 51px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+    width: 200px;
+    transform: translateX(-25%);
+    text-align: center;
+
+
+
+    .navigation--item a{
+    color: $base-dark;
+    padding: 8px;
+    display: block;
+    width: 100%;
+    transition: 0.2s ease-in-out;
+    
+    &:hover{
+      background-color: $base-lighter;
+    }
+    }
+    .deeper{
+      padding: 5px;
+      border-bottom: 1px solid $base-lighter;
+    }
+  }
+
+
+
+
+
+// MODIFIERS 
+&__primary{ background-color: $brand-primary; color: $base-white}
+
+&__secondary{ background-color: $brand-secondary; color: $base-white}
+
+&__fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+}
+
+
+.navigation-mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  transform: translateX(0%);
+  opacity: 1;
+  transition: all .3s ease-in-out;
+  z-index: 900;
+
+
+  .js-backdrop{
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgba($base-black, 0.9);
+  }
+
+  .navigation--items{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 18px;
+    width: 200px;
+
+    .navigation--item a{
+      display: block;
+    }
+
+    .fa-chevron-down{
+      color: white
+    }
+  }
+
+
+
+  .dropdown-items{
+    border-bottom: 1px solid $base-mid;
+    border-top: 1px solid $base-mid;
+
+
+    .navigation--item a{
+    color: $base-light;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    }
+
+    .deeper{
+    }
+  }
+}  
+
+.js-hide{
+  transform: translateX(100%);
+  opacity: 0;
+  }

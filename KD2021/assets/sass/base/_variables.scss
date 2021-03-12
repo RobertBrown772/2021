@@ -1,0 +1,55 @@
+// Colour Variables
+  // Primary
+  $brand-primary: #F18805;
+  $brand-primary-dark: darken($brand-primary, 10%);
+  $brand-primary-light: lighten($brand-primary, 10%);
+  // Main
+  $brand-main: #A4243B;
+  $brand-main-dark: darken($brand-primary, 10%);
+  $brand-main-light: lighten($brand-primary, 10%);
+  // Secondary
+  $brand-secondary: #577590;
+  $brand-secondary-dark: darken($brand-primary, 10%);
+  $brand-secondary-light: lighten($brand-primary, 10%);
+  // Main
+  $brand-main: #273E47;
+  $brand-main-dark: darken($brand-primary, 10%);
+  $brand-main-light: lighten($brand-primary, 10%);
+  // Tertiary
+  $brand-tertiary: #D1D2DC;
+  $brand-tertiary-dark: darken($brand-primary, 10%);
+  $brand-tertiary-light: lighten($brand-primary, 10%);
+
+// Grey White & Blacks 
+$base-black: #000;
+$base-dark: #222 ;
+$base-mid: #666;
+$base-light: #888;
+$base-lighter: #e7e7e7;
+$base-white: #FFF;
+
+// Utility Variables 
+  // Padding + Margin Variables
+  $pad-xl: 50px;
+  $pad-lg: 35px;
+  $pad-md: 20px;
+  $pad-df: 15px;
+  $pad-sm: 10px;
+  $pad-xs: 5px;
+
+  $m-xl: 50px;
+  $m-lg: 35px;
+  $m-md: 20px;
+  $m-df: 15px;
+  $m-sm: 10px;
+  $m-xs: 5px;
+  /*------------------------------------------------------------------------------
+// Breakpoint Variables
+//----------------------------------------------------------------------------*/
+$viewport-full-max: 1920px;
+$viewport-full-min: 400px;
+$viewport-xl: 1600px;
+$viewport-lg: 1200px;
+$viewport-md: 992px;
+$viewport-sm: 768px;
+$viewport-xs: 576px;
